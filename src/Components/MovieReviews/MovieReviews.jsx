@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import s from "./MovieReviews.module.css"
-import { getMoviesDetailsReviews } from "../../services/api"
+import { getMoviesDetailsReviews } from "../../services/api.js"
 import { useParams } from "react-router-dom"
 
 const MovieReviews = () => {

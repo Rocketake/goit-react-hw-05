@@ -1,5 +1,5 @@
 import { Link, Outlet, useLocation, useParams } from "react-router-dom"
-import { getMoviesDetails } from "../../services/api"
+import { getMoviesDetails } from "../../services/api.js"
 import { Suspense, useEffect, useRef, useState } from "react"
 import GoBack from "../../components/GoBack/GoBack"
 import s from "./MovieDetailsPage.module.css"

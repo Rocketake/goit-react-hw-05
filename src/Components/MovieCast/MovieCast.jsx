@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react"
 import s from "./MovieCast.module.css"
-import { getMoviesDetailsCast } from "../../services/api"
+import { getMoviesDetailsCast } from "../../services/api.js"
 
 
 const MovieCast = () => {
