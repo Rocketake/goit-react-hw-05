@@ -1,15 +1,15 @@
-import { Suspense, useEffect, useState } from 'react'
-import { getTrendingMovies } from '../../Services/api'
-import MovieList from '../../Components/MovieList/MovieList'
+import { useEffect, useState } from 'react'
+import { getTrendingMovies } from '../../services/api'
+import MovieList from '../../components/MovieList/MovieList'
 
 const HomePage = () => {
-    const [movies, SetMovies] = useState([])
+    const [movies, setMovies] = useState([])
   useEffect(() => {
 
     try {
       const fetchData = async () => {
         const {results} = await getTrendingMovies()
-       SetMovies(results)
+       setMovies(results)
       }
       fetchData()
     } catch (error) {

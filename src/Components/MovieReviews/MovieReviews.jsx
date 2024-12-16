@@ -1,6 +1,6 @@
-import { Suspense, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import s from "./MovieReviews.module.css"
-import { getMoviesDetailsReviews } from "../../Services/api"
+import { getMoviesDetailsReviews } from "../../services/api"
 import { useParams } from "react-router-dom"
 
 const MovieReviews = () => {
@@ -23,8 +23,6 @@ const MovieReviews = () => {
       }
     }, [movieId])
   
-  const defaultImg =
-    "https://dummyimage.com/400x600/cdcdcd/000.jpg&text=No+poster";
 
   return (
     <div className={s.wrapper}>
