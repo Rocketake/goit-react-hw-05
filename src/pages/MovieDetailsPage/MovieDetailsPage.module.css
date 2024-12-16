@@ -1,0 +1,24 @@
+.detailsWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.396);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.genres {
+  display: flex;
+  gap: 10px;
+}
+
+.info {
+  padding-bottom: 4px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.396);
+  text-decoration: underline;
+}

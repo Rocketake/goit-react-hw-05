@@ -1,0 +1,10 @@
+.wrapper {
+  padding: 15px 0 15px 20px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.396);
+}

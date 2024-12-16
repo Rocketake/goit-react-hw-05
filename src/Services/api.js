@@ -22,6 +22,14 @@ export const getMoviesDetails = async (movieId) => {
   return data;
 };
 
+export const getMoviesByQuery = async (query) => {
+  const { data } = await axios.get(
+    `/search/movie?query=${query}&include_adult=false&language=en-US&page=1`,
+    options
+  );
+  return data;
+};
+
 export const getMoviesDetailsCast = async (movieId) => {
   const { data } = await axios.get(
     `/movie/${movieId}/credits?language=en-US`,
@@ -30,9 +38,9 @@ export const getMoviesDetailsCast = async (movieId) => {
   return data;
 };
 
-export const getMoviesByQuery = async (query) => {
+export const getMoviesDetailsReviews = async (movieId) => {
   const { data } = await axios.get(
-    `/search/movie?query=${query}&include_adult=false&language=en-US&page=1`,
+    `/movie/${movieId}/reviews?language=en-US`,
     options
   );
   return data;

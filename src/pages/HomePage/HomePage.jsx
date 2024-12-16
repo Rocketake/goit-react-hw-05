@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { getTrendingMovies } from '../../Services/api'
 import MovieList from '../../Components/MovieList/MovieList'
 
@@ -19,7 +19,9 @@ const HomePage = () => {
   return (
     <div>
       <h1>Trending today</h1>
-      <MovieList movies={movies} />
+
+        <MovieList movies={movies} />
+
   </div>
   )
 }
