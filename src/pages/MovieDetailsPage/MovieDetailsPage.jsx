@@ -1,7 +1,7 @@
 import { Link, Outlet, useLocation, useParams } from "react-router-dom"
-import { getMoviesDetails } from "../../services/api.js"
+import { getMoviesDetails } from "../../API/api.js"
 import { Suspense, useEffect, useRef, useState } from "react"
-import GoBack from "../../components/GoBack/GoBack.jsx"
+import GoBack from "../../TEMP_COMP/GoBack/GoBack.js"
 import s from "./MovieDetailsPage.module.css"
 
 const MovieDetailsPage = () => {
