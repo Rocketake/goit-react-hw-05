@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import SearchBar from '../../components/SearchBar/SearchBar.jsx'
 import { getMoviesByQuery } from '../../services/api.js'
-import MovieList from '../../components/MovieList/MovieList.js'
+import MovieList from '../../components/MovieList/MovieList.jsx'
 
 const MoviesPage = () => {
 const [searchParams, setSearchParams] = useSearchParams()
