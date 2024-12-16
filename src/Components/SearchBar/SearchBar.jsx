@@ -7,7 +7,6 @@ const SearchBar = ({handleSetParams}) => {
 	} 
 	
 	const handleSubmit = (value, options) => {
-		console.log(value);
 		handleSetParams(value.query)
 		options.resetForm()
 		

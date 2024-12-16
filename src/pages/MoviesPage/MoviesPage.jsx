@@ -21,7 +21,6 @@ useEffect(() => {
         const fetchData = async () => {
            if (!query) return;
           const {results} = await getMoviesByQuery(query)
-          console.log(results);
         setSearchMovies(results)
         }
         fetchData()
